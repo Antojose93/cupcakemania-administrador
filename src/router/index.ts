@@ -13,6 +13,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Dashboard', 
     component: () => import('../views/Dashboard.vue'), 
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/pedidos',
+    name: 'Pedidos',
+    component: () => import('../views/OrdersView.vue'),
+    meta: { title: 'Gestión de Pedidos' }
   }
 ]
 
